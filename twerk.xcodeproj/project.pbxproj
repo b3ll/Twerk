@@ -38,10 +38,6 @@
 		661CE27317912AEB00A1BDAA /* ABPhotoFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 661CE27217912AEB00A1BDAA /* ABPhotoFrame.m */; };
 		6637FC51179297070060C759 /* Clear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6637FC50179297070060C759 /* Clear@2x.png */; };
 		6637FC531792970D0060C759 /* Done@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6637FC521792970D0060C759 /* Done@2x.png */; };
-		6637FC5E179299290060C759 /* ImgurAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 6637FC56179299290060C759 /* ImgurAPI.m */; };
-		6637FC5F179299290060C759 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 6637FC59179299290060C759 /* NSData+Base64.m */; };
-		6637FC60179299290060C759 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 6637FC5B179299290060C759 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		6637FC61179299290060C759 /* NSString+URLEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = 6637FC5D179299290060C759 /* NSString+URLEscape.m */; };
 		6637FC6317929A800060C759 /* Share@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6637FC6217929A800060C759 /* Share@2x.png */; };
 		6637FC6517929CA00060C759 /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6637FC6417929CA00060C759 /* Twitter.framework */; };
 		6637FC671792A04B0060C759 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6637FC661792A04B0060C759 /* Accounts.framework */; };
@@ -60,6 +56,10 @@
 		6656D55017926520007A05B7 /* AnimatedGif.m in Sources */ = {isa = PBXBuildFile; fileRef = 6656D54F17926520007A05B7 /* AnimatedGif.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		66625AB917927CB300163223 /* ABGifView.m in Sources */ = {isa = PBXBuildFile; fileRef = 66625AB817927CB300163223 /* ABGifView.m */; };
 		66625ABF17928C6600163223 /* ABPieIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 66625ABE17928C6600163223 /* ABPieIndicator.m */; };
+		668C1475179332270041A413 /* ImgurAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = 668C146D179332270041A413 /* ImgurAPI.m */; };
+		668C1476179332270041A413 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 668C1470179332270041A413 /* NSData+Base64.m */; };
+		668C1477179332270041A413 /* NSString+URLEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 668C1472179332270041A413 /* NSString+URLEncoding.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		668C1478179332270041A413 /* NSString+URLEscape.m in Sources */ = {isa = PBXBuildFile; fileRef = 668C1474179332270041A413 /* NSString+URLEscape.m */; };
 		66D9DFDB179211D3006090C0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D9DFDA179211D3006090C0 /* AVFoundation.framework */; };
 		66D9DFDE179211D7006090C0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D9DFDD179211D7006090C0 /* CoreMedia.framework */; };
 		66D9DFE0179211DB006090C0 /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 66D9DFDF179211DB006090C0 /* CoreImage.framework */; };
@@ -109,14 +109,6 @@
 		661CE27217912AEB00A1BDAA /* ABPhotoFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABPhotoFrame.m; sourceTree = "<group>"; };
 		6637FC50179297070060C759 /* Clear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Clear@2x.png"; sourceTree = "<group>"; };
 		6637FC521792970D0060C759 /* Done@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Done@2x.png"; sourceTree = "<group>"; };
-		6637FC55179299290060C759 /* ImgurAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurAPI.h; sourceTree = "<group>"; };
-		6637FC56179299290060C759 /* ImgurAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurAPI.m; sourceTree = "<group>"; };
-		6637FC58179299290060C759 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
-		6637FC59179299290060C759 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
-		6637FC5A179299290060C759 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
-		6637FC5B179299290060C759 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
-		6637FC5C179299290060C759 /* NSString+URLEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEscape.h"; sourceTree = "<group>"; };
-		6637FC5D179299290060C759 /* NSString+URLEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEscape.m"; sourceTree = "<group>"; };
 		6637FC6217929A800060C759 /* Share@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Share@2x.png"; sourceTree = "<group>"; };
 		6637FC6417929CA00060C759 /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		6637FC661792A04B0060C759 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
@@ -138,6 +130,14 @@
 		66625AB817927CB300163223 /* ABGifView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABGifView.m; sourceTree = "<group>"; };
 		66625ABD17928C6600163223 /* ABPieIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABPieIndicator.h; sourceTree = "<group>"; };
 		66625ABE17928C6600163223 /* ABPieIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ABPieIndicator.m; sourceTree = "<group>"; };
+		668C146C179332270041A413 /* ImgurAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImgurAPI.h; sourceTree = "<group>"; };
+		668C146D179332270041A413 /* ImgurAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImgurAPI.m; sourceTree = "<group>"; };
+		668C146F179332270041A413 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		668C1470179332270041A413 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		668C1471179332270041A413 /* NSString+URLEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEncoding.h"; sourceTree = "<group>"; };
+		668C1472179332270041A413 /* NSString+URLEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncoding.m"; sourceTree = "<group>"; };
+		668C1473179332270041A413 /* NSString+URLEscape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+URLEscape.h"; sourceTree = "<group>"; };
+		668C1474179332270041A413 /* NSString+URLEscape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEscape.m"; sourceTree = "<group>"; };
 		66D9DFDA179211D3006090C0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		66D9DFDD179211D7006090C0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		66D9DFDF179211DB006090C0 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
@@ -197,7 +197,7 @@
 			children = (
 				661492831792B8BC00D6194A /* Icon.png */,
 				661492811792B8BA00D6194A /* Icon@2x.png */,
-				6637FC54179299290060C759 /* ImgurAPI */,
+				668C146B179332270041A413 /* ImgurAPI */,
 				6656D55117926523007A05B7 /* AnimatedGifView */,
 				66D9DFE1179219C3006090C0 /* LXReorderableCollectionViewFlowLayout */,
 				661492671792B12E00D6194A /* PhotoEffects */,
@@ -287,30 +287,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		6637FC54179299290060C759 /* ImgurAPI */ = {
-			isa = PBXGroup;
-			children = (
-				6637FC55179299290060C759 /* ImgurAPI.h */,
-				6637FC56179299290060C759 /* ImgurAPI.m */,
-				6637FC57179299290060C759 /* modules */,
-			);
-			name = ImgurAPI;
-			path = "ImgurAPI-for-iOS/ImgurAPI";
-			sourceTree = "<group>";
-		};
-		6637FC57179299290060C759 /* modules */ = {
-			isa = PBXGroup;
-			children = (
-				6637FC58179299290060C759 /* NSData+Base64.h */,
-				6637FC59179299290060C759 /* NSData+Base64.m */,
-				6637FC5A179299290060C759 /* NSString+URLEncoding.h */,
-				6637FC5B179299290060C759 /* NSString+URLEncoding.m */,
-				6637FC5C179299290060C759 /* NSString+URLEscape.h */,
-				6637FC5D179299290060C759 /* NSString+URLEscape.m */,
-			);
-			path = modules;
-			sourceTree = "<group>";
-		};
 		6656D54D17925775007A05B7 /* Poof! */ = {
 			isa = PBXGroup;
 			children = (
@@ -330,6 +306,30 @@
 				6656D54F17926520007A05B7 /* AnimatedGif.m */,
 			);
 			name = AnimatedGifView;
+			sourceTree = "<group>";
+		};
+		668C146B179332270041A413 /* ImgurAPI */ = {
+			isa = PBXGroup;
+			children = (
+				668C146C179332270041A413 /* ImgurAPI.h */,
+				668C146D179332270041A413 /* ImgurAPI.m */,
+				668C146E179332270041A413 /* modules */,
+			);
+			name = ImgurAPI;
+			path = "ImgurAPI-for-iOS/ImgurAPI";
+			sourceTree = "<group>";
+		};
+		668C146E179332270041A413 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				668C146F179332270041A413 /* NSData+Base64.h */,
+				668C1470179332270041A413 /* NSData+Base64.m */,
+				668C1471179332270041A413 /* NSString+URLEncoding.h */,
+				668C1472179332270041A413 /* NSString+URLEncoding.m */,
+				668C1473179332270041A413 /* NSString+URLEscape.h */,
+				668C1474179332270041A413 /* NSString+URLEscape.m */,
+			);
+			path = modules;
 			sourceTree = "<group>";
 		};
 		66D9DFE1179219C3006090C0 /* LXReorderableCollectionViewFlowLayout */ = {
@@ -448,10 +448,10 @@
 				6656D55017926520007A05B7 /* AnimatedGif.m in Sources */,
 				66625AB917927CB300163223 /* ABGifView.m in Sources */,
 				66625ABF17928C6600163223 /* ABPieIndicator.m in Sources */,
-				6637FC5E179299290060C759 /* ImgurAPI.m in Sources */,
-				6637FC5F179299290060C759 /* NSData+Base64.m in Sources */,
-				6637FC60179299290060C759 /* NSString+URLEncoding.m in Sources */,
-				6637FC61179299290060C759 /* NSString+URLEscape.m in Sources */,
+				668C1475179332270041A413 /* ImgurAPI.m in Sources */,
+				668C1476179332270041A413 /* NSData+Base64.m in Sources */,
+				668C1477179332270041A413 /* NSString+URLEncoding.m in Sources */,
+				668C1478179332270041A413 /* NSString+URLEscape.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
