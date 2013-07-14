@@ -14,8 +14,8 @@
 {
     // Override point for customization after application launch.
     
-#error Change Client ID
-    [[R1PhotoEffectsSDK sharedManager] enableWithClientID:@"CLIENT ID"];
+    //#error Change Client ID
+    [[R1PhotoEffectsSDK sharedManager] enableWithClientID:@"0120d8e0-ce5e-0130-2261-22000afc0b0e"];
     
     return YES;
 }

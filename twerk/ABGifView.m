@@ -60,12 +60,12 @@
         
         NSData *gifData = [[NSData alloc] initWithContentsOfURL:_gifURL];
         
-#error Change Client ID
+        //#error Change Client ID
         
         [ImgurAPI uploadPhoto:gifData
                         title:@""
                   description:@""
-                imgurClientID:@"CLIENT ID"
+                imgurClientID:@"35b820d53e7d69f"
               completionBlock:^(NSString *result) {
                   [tweetSheet setInitialText:[NSString stringWithFormat:@"Go Go Gadget Gif! %@", result]];
                   [[[[UIApplication sharedApplication] keyWindow] rootViewController] presentViewController:tweetSheet animated:YES completion:nil];
@@ -90,12 +90,12 @@
     {
         NSData *gifData = [[NSData alloc] initWithContentsOfURL:_gifURL];
 
-#error Change Client ID
+        //#error Change Client ID
         
         [ImgurAPI uploadPhoto:gifData
                         title:@""
                   description:@""
-                imgurClientID:@"CLIENT_ID"
+                imgurClientID:@"35b820d53e7d69f"
               completionBlock:^(NSString *result) {
                   [[UIPasteboard generalPasteboard] setString:result];
               } failureBlock:^(NSURLResponse *response, NSError *error, NSInteger status) {
