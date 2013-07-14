@@ -13,6 +13,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+#error Change Client ID
+    [[R1PhotoEffectsSDK sharedManager] enableWithClientID:@"CLIENT ID"];
+    
     return YES;
 }
 							
